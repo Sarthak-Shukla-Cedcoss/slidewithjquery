@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>
+			Oslo
+		</title>
+		<link rel="icon" type="image/png" href="o.png">
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    	<link rel="stylesheet" type="text/css" href="oslo.css">
+	</head>
+	<body >
+		<div class="container-fluid" style="padding-left:0px ;">
+<!----------------------------HEADER--------------------------------------------------------------------------------------------------->
+			<nav class="navbar navbar-expand ">
+				<div class="container-fluid">
+					<div class="navvbar-header">			
+						<a class="brand-name text-danger" href="#"><h1>Oslo</h1></a>
+					</div>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">FEATURE</a>
+						</li>
+					<li class="nav-item">
+						<a class ="nav-link" href="#">REVIEWS</a>
+					</li>
+						<li class="nav-item">
+							<button type="button" class="btn btn-danger 	btnhover rndbtn">SIGN UP</button>
+						</li>
+					</ul>
+				</div>
+			</nav>
+<!-------------------------------------------SECTION Slide show poster -------------------------------------------------->
+			<div id="slideshow">
+				<img class="slide" src="computer12.jpg">
+				<img class="slide" src="slide.jpg">
+				<img class="slide" src="slide1.jpg">
+				<div class="arrowleft"><i class="fa fa-chevron-circle-left" onclick="moveSlides(-1)" style="font-size:36px"></i></div>
+				<div class="arrowright"><i class="fa fa-chevron-circle-right" onclick="moveSlides(1)" style="font-size:36px"></i></div>
+				<div class="foo" style="text-align:center"> 
+					<span class="footerdot" 
+						onclick="activeSlide(1)"> 
+					</span> 
+					<span class="footerdot"
+						onclick="activeSlide(2)"> 
+					</span> 
+					<span class="footerdot" 
+						onclick="activeSlide(3)"> 
+					</span> 
+				</div> 
+				<div class="textover">
+					<h3>
+						Unleash your potential
+					</h3>
+					<p>
+						The harder you work for something, the greater you'll feel when you achieve it.
+					</p>
+					<button class="btn">Learn more</button>
+				</div>
+			</div>
+<!--------------------------------------Section 1 ABOUT US ---------------------------------------------------------------->
+			<section class=" mt-auto container">
+				<div class="row">
+					<div class="col-md-6 text-justify">
+						<br><br><br>
+						//01 ABOUT
+						<br>
+						<h2 style="color: #ff005e">We all want our jobs run smoothly </h2>
+						<br>
+						<p >
+							The harder you work for something, the greater you'll feel when you achieve it.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+						<br>
+						<button type="button " class="btn btnhover btn-danger rndbtn"> Learn More</button>					
+					</div>
+					<div class="col-md-6	 text-center img-fluid" style="position:relative">
+						<br><br><br><br><br>
+						<img src="about1.jpg" class="imground text-center" alt="about">	
+						<div style="height:150px;width:250px;border:2px solid #ff005e;border-radius:80px 130px 130px 80px ;position: absolute;top:40%;left:20%; z-index: 1">
+                		</div>
+					</div>
+				</div>
+			</section>
+<!--------------------------------------------SECTION 2 FEATURE---------------------------------------------------------------------->
+			<section class="mt-5">
+				<div class="text-center">
+					<br><br>
+					//02 FEATURE
+					<h2 style="color:#ff005e"> Be on the same page  </h2>
+					<br><br><br>
+				</div>
+				<!----------3 divs ----->
+				<div class="row text-center mt-5">
+					<div class="col-md-4">
+						<i class="fa fa-list" style="font-size:24px; color:#ff005e">
+                    	</i><br>
+						<strong>Stay Organized</strong>
+						<p>I'm a text box.<br>
+						Double click me to edit the text.</p>
+					</div>
+			    	<div class="col-md-4 text-center">
+			    		<i class="fa fa-angellist" style="font-size:24px; color:#ff005e">
+                	    </i><br>
+				    	<strong>Be more Productive</strong>
+						<p>I'm a text box.<br>
+						Double click me to edit the text.</p>
+				    </div>
+			    	<div class="col-md-4 text-center">
+			    		<i class="fa fa-child" style='font-size:24px;color:#ff005e'>
+            	        </i><br>
+			    		<strong>Collaborate</strong>
+						<p>I'm a text box.<br>
+						Double click me to edit the text.</p>
+			    	</div>
+				</div>
+			    <!------------ 2 divs ---->
+			    <div class="row text-justify mt-auto mr-auto">
+			    	<div class="col-md-6 col-sm-12 text-center " style="position:relative"><br><br><br><br>
+			    		<img src="about1.jpg" class="imground" alt="about"> 
+			    		<div style="height: 150px;width:250px; border:2px solid #ff005e;border-radius: 80px 130px 130px 80px ;position: absolute;top:25%;left:25%;z-index:-1">
+			    		</div> 
+			    	</div>
+			    	<div class="col-md-6  col-sm-12 "><br><br><br>
+			    		<h2 style="color:#ff005e">Add structure to
+                        our daily tasks</h2><br><br>
+						<p>The harder you work for something,
+						the greater you'll feel when you achieve it.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</p>
+			    	</div>
+			    </div>
+			</div>
+		</section>
+<!---------------------------------------------------------SECTION 3 DASH BOARD ---------------------------------------------------------->
+		<section class="text-center mt-5 container-fluid"><br><br>
+			03// The Dashboard
+			<h2>Every thing works better <br>when it looks better</h2><br><br>
+			<img src="computer1.png" alt="com tab" class="img-fluid trans" style="max-width: 50%;height:auto;"><br><br>
+		</section>
+<!------------------------------------------------------SECTION 4 REVIEWS---------------------------------------------------------------->
+		<section class="text-center mt-5 container-fluid"><br><br>
+			04// REVIEWS<br><br>
+			<h2>A few words from from our <span class="text-danger">amazing </span><br>and trusting customers</h2><br><br>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="border shadow rounded">
+					<p>
+                           	I have been an illustrator for over 15 years now.
+                           	this tool allows me to manage multiple projects at once and it makes my job way easier. 
+                       	</p>
+                       	<img src="man.jpg" alt="man" style="border-radius: 50%; height:100px; width: 100px;">
+                       	<h3>
+                           	Mark Jonhson
+                       	</h3>
+                       	<p>
+                           	Illustrator
+                       	</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="border shadow rounded">
+						<p>
+                    	       	I have been an illustrator for over 15 years now.
+                    	       	this tool allows me to manage multiple projects at once and it makes my job way easier. 
+                    	   	</p>
+                    	   	<img src="man.jpg" alt="man" style="border-radius: 50%; height:100px; width: 100px;">
+                	       	<h3>
+                	           	Mark Jonhson
+                	       	</h3>
+                	       	<p>
+                	           	Illustrator
+                	       	</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+                		<div class="border shadow rounded">
+							<p>
+                	           	I have been an illustrator for over 15 years now.
+            	               	this tool allows me to manage multiple projects at once and it makes my job way easier. 
+           	            	</p>
+           	            	<img src="man.jpg" alt="man" style="border-radius: 50%; height:100px; width: 100px;">
+           	            	<h3>
+        	                   	Mark Jonhson
+        	               	</h3>
+        	               	<p>
+        	                   	Illustrator
+        	               	</p>
+					</div>
+				</div>
+			</div>
+			</section>
+<!-----------------------------------------GRATIENT DIVISION------------------------------------------------------------------>
+ 	    	<section class="mt-5 container-fluid">
+            	<div class=" row grade pl-3 pt-3 pb-3">
+        	        <div class="col-md-8">Did you want to be notified when we launch ?</div>
+        	   	<div class="col-md-4 text-right"><button type="button" class="btn btn-danger btnhover">SIGN UP TODAY</button></div>
+       		</div>
+        	</section>
+<!-----------------------------------------SECTION 5 SIGN UP------------------------------------------------------->
+			<div class="container-fluid bgcolor1 img-fluid">
+				<div class="row">
+					<div class="col-md-8 text-center">
+					<br><br><br>05//SIGN UP<br><br>
+					<h2> Creative with this revolutionary tool</h2><br><br>
+						<p>I'm a tool.Double click me to edit.</p>
+					</div>
+					<div class="col-md-4 ">
+						<form >
+							<br><br>
+							<div class="form-group">
+								<label>Name:</label>
+								<input class="form-control" type="text" name="name" placeholder="Name">
+							</div>
+							<div class="form-group">
+								<label>E-Mail:</label>
+								<input type="email" class="form-control" name="email" placeholder="E-Mail">
+							</div>
+							<div class="form-group">
+								<label>Message</label>
+								<textarea class="form-control" rows="3" placeholder="Message..."></textarea>
+							</div>
+							<div class="form-group">
+								<button class="btn btn-danger btnhover rndbtn" type="submit"> Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+<!------------------------------------------Footer--------------------------------->
+        	<footer class="container-fluid">
+				<div class="row text-center " style=" background-color: #ff005e;background-image: linear-gradient(to right,maroon,grey,white,grey,maroon);">
+					<div class="col-md-4">
+						<a href="#" class="fa fa-facebook"></a>
+       					<a href="#" class="fa fa-twitter"></a>
+       					<a href="#" class="fa fa-instagram"></a>
+               			<a href="#" class="fa fa-youtube"></a>
+					</div>
+					<div class="col-md-4">
+						<h1><span class="text-danger">oslo</span></h1> 
+					</div>
+					<div class="col-md-4 mt-3">
+						<a style="color:black" href="#">REVIEW</a>
+						<a style="color:black" href="#">FEATURE</a>
+						<a style="color:black" href="#">SIGN UP</a>
+					</div>
+				</div>
+			</footer>
+<!-------------------------END------------------------------->
+		</div>
+	</body>
+	<script src="main1.js"></script>
+</html>

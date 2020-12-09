@@ -1,0 +1,103 @@
+.bgcolor1{
+	background-image: url('meeting-dark.jpg');
+	opacity: 0.9;
+	color: white;
+  width:100%;
+  height:auto; 
+}
+.textover{
+  text-align: center;
+  color: white;
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%,0);
+}
+.btn{
+  color:white;
+  background-color: #ff005e;
+  border-radius: 20px;
+}
+#slideshow{
+  position: relative;
+  width: 100%;
+  margin: 0%;
+  height:400px;
+}
+.slide{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 400px;
+}
+.arrowleft{
+  z-index:6;
+  cursor: pointer ; 
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+  left: 2%;
+}
+.arrowright{
+  z-index:6;
+  cursor: pointer ; 
+  position: absolute;
+  top:50%;
+  transform: translate(0,-50%);
+  right:2%;
+}
+.grade{
+  height: auto;
+  background-color: #ff005e;
+  background-image: linear-gradient(to right,maroon,grey,maroon);
+  color:white;
+  font-size: 30px;
+}
+.foo{
+  z-index: 6;
+  position: absolute;
+  bottom: 1%;
+  left:50%;
+  transform: translate(-50%,0);
+}
+.footerdot { 
+  cursor: pointer ; 
+  height: 15px; 
+  width: 15px; 
+  margin: 0 2px; 
+  background-color: #bbbbbb; 
+  border-radius: 50%; 
+  display: inline-block; 
+}
+.imground{
+	width:250px;
+	height:150px;
+	border-radius: 80px 130px 130px 80px;
+}
+.rndbtn{
+	border-radius: 20px;
+}
+.trans:hover{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);}
+.fa {
+  padding: 0px;
+  font-size: 25px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 0px;
+}
+.fa:hover {
+  opacity: 0.5;
+}
+.fa-chevron-circle-left , .fa-chevron-circle-right{
+  color: white;
+}
+.fa-instagram,.fa-youtube.fa-facebook,.fa-twitter {
+  color: black;
+  border-radius: 50%;}
+.hver:hover{
+    opacity: .7;
+  }
