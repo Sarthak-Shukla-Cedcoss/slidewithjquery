@@ -3,11 +3,9 @@ var totalslides = $("#slideshow .slide");
 var totaldots = $(".footerdot");   
 var int;
         function moveSlides(n) { 
-            clickon(slideIndex += n);
             clearInterval(int);
-            $("#1").removeClass("active");
-            $("#2").removeClass("active");
-            $("#3").removeClass("active");
+            clickon(slideIndex += n);
+            $("#1, #2 , #3").removeClass("active");
             if( slideIndex == 0){
                 $("#1").addClass("active");
             }
@@ -19,11 +17,9 @@ var int;
             } 
         }    
         function activeSlide(n) { 
-            clickon(slideIndex = n); 
             clearInterval(int);
-            $("#1").removeClass("active");
-            $("#2").removeClass("active");
-            $("#3").removeClass("active");
+            clickon(slideIndex = n);
+            $("#1, #2 , #3").removeClass("active");
             if( n == 0){
                 $("#1").addClass("active");
             }
@@ -52,9 +48,7 @@ var int;
         return {
             startSlideshow: function () {
                int = window.setInterval(function () { 
-                    $("#1").removeClass("active");
-                    $("#2").removeClass("active");
-                    $("#3").removeClass("active");
+                $("#1, #2 , #3").removeClass("active");
                     $(".slide").hide();
                     if( slideIndex == 0){
                         $("#1").addClass("active");
