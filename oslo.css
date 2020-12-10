@@ -31,6 +31,9 @@
   width: 100%;
   height: 400px;
 }
+.active{
+  background-color:rgb(77, 16, 16) !important; 
+}
 .arrowleft{
   z-index:6;
   cursor: pointer ; 
@@ -95,7 +98,7 @@
 .fa-chevron-circle-left , .fa-chevron-circle-right{
   color: white;
 }
-.fa-instagram,.fa-youtube.fa-facebook,.fa-twitter {
+.fa-instagram,.fa-youtube,.fa-facebook,.fa-twitter {
   color: black;
   border-radius: 50%;}
 .hver:hover{

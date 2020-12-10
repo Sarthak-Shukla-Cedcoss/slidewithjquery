@@ -1,15 +1,41 @@
 var slideIndex = 0;  
-var totalslides = $(".slide"); 
+var totalslides = $("#slideshow .slide"); 
 var totaldots = $(".footerdot");   
+var int;
         function moveSlides(n) { 
-            clickon(slideIndex += n); 
+            clickon(slideIndex += n);
+            clearInterval(int);
+            $("#1").removeClass("active");
+            $("#2").removeClass("active");
+            $("#3").removeClass("active");
+            if( slideIndex == 0){
+                $("#1").addClass("active");
+            }
+            if( slideIndex == 1){
+                $("#2").addClass("active");
+            }
+            if( slideIndex == 2){
+                $("#3").addClass("active");
+            } 
         }    
         function activeSlide(n) { 
             clickon(slideIndex = n); 
+            clearInterval(int);
+            $("#1").removeClass("active");
+            $("#2").removeClass("active");
+            $("#3").removeClass("active");
+            if( n == 0){
+                $("#1").addClass("active");
+            }
+            if( n == 1){
+                $("#2").addClass("active");
+            }
+            if( n == 2){
+                $("#3").addClass("active");
+            }
         }
         function clickon(n) { 
-            var i; 
-                    
+            
             if (n > totalslides.length-1) { 
                 slideIndex = 0; 
             } 
@@ -18,22 +44,34 @@ var totaldots = $(".footerdot");
             } 
             $(".slide").hide();
             totalslides[slideIndex ].style.display = "block";
+            slideshow.startSlideshow();  
     } 
     var slideshow = (function () {
         var slides =  $("#slideshow .slide"),
             slidesLen = slides.length - 1 ;
         return {
             startSlideshow: function () {
-                window.setInterval(function () { 
-                        $(".slide").hide(); 
+               int = window.setInterval(function () { 
+                    $("#1").removeClass("active");
+                    $("#2").removeClass("active");
+                    $("#3").removeClass("active");
+                    $(".slide").hide();
+                    if( slideIndex == 0){
+                        $("#1").addClass("active");
+                    }
+                    if( slideIndex == 1){
+                        $("#2").addClass("active");
+                    }
+                    
                     if ( slideIndex == slidesLen) {
+                        $("#3").addClass("active");
                         slides.eq( slideIndex).show();
                         slideIndex = 0;                        
                     } else {
                         slides.eq( slideIndex).show();
                         slideIndex += 1;
                     }
-                }, 4000);
+                }, 2000);
             }
         };
     }());

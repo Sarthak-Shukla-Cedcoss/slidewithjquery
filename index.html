@@ -30,12 +30,13 @@
 						<a class ="nav-link" href="#">REVIEWS</a>
 					</li>
 						<li class="nav-item">
-							<button type="button" class="btn btn-danger 	btnhover rndbtn">SIGN UP</button>
+							<button type="button" class="btn btn-danger btnhover rndbtn">SIGN UP</button>
 						</li>
 					</ul>
 				</div>
 			</nav>
 <!-------------------------------------------SECTION Slide show poster -------------------------------------------------->
+			
 			<div id="slideshow">
 				<img class="slide" src="computer12.jpg">
 				<img class="slide" src="slide.jpg">
@@ -43,14 +44,14 @@
 				<div class="arrowleft"><i class="fa fa-chevron-circle-left" onclick="moveSlides(-1)" style="font-size:36px"></i></div>
 				<div class="arrowright"><i class="fa fa-chevron-circle-right" onclick="moveSlides(1)" style="font-size:36px"></i></div>
 				<div class="foo" style="text-align:center"> 
-					<span class="footerdot" 
+					<span id="1" class="footerdot" 
+						onclick="activeSlide(0)"> 
+					</span> 
+					<span id="2" class="footerdot"
 						onclick="activeSlide(1)"> 
 					</span> 
-					<span class="footerdot"
+					<span id="3" class="footerdot active" 
 						onclick="activeSlide(2)"> 
-					</span> 
-					<span class="footerdot" 
-						onclick="activeSlide(3)"> 
 					</span> 
 				</div> 
 				<div class="textover">
